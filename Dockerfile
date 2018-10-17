@@ -30,4 +30,4 @@ RUN mkdir -p /opt/workspace
 COPY / /opt/workspace/
 WORKDIR /opt/workspace
 RUN ls -a
-RUN gradlew installDebug
+RUN ./gradlew installDebug
