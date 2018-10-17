@@ -29,6 +29,6 @@ FROM ubuntu:18.04
 RUN mkdir -p /opt/workspace
 COPY / /opt/workspace/
 WORKDIR /opt/workspace
-RUN cd /opt/workspace
+RUN cd /opt/workspace/workspace
 RUN ls -a
 RUN ./gradlew installDebug
