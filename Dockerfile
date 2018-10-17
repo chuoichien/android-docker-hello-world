@@ -29,5 +29,6 @@ RUN echo yes | sdkmanager "platform-tools" "platforms;android-28"
 RUN mkdir -p /opt/workspace
 COPY / /opt/workspace/
 WORKDIR /opt/workspace
+CD /opt/workspace
 RUN ls -a
 RUN ./gradlew installDebug
